@@ -26,6 +26,8 @@ then
     echo "Virtual environment does not exist - creating one now..."
     make_venv
     activate_venv
+    echo "Upgrading pip"
+    pip install --upgrade pip
     echo "Installing wheel"
     pip -q install wheel
     echo "Installing requirements"
