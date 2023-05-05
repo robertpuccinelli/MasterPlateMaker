@@ -30,7 +30,7 @@ The configuration file is pretty simple and can be found at [**config.ini**](con
 * *RESUME* : The program will terminate when it finds an empty cell. If you accidentally left a cell empty, you can tell the program where to start from the next time you run it.
 
 ### Bash script
-All you need to do is type `./run.sh` with a terminal that has admin privledges. The script will:
+All you need to do is type `./run.sh` with a terminal that has admin privileges. The script will:
 1. Create a virtual environment if one doesn't exist already
 2. Install the required packages for a new virtual environment
 3. Activate the environment
@@ -50,11 +50,12 @@ The program relies on a CSV to know what sample to present to the user. A templa
 1. Clone or download the repository
 2. Change the config file to match your interests
 3. Add your CSV file to the folder or edit the template included
-4. Navigate to the directory with a terminal that has admin privledges
+4. Navigate to the directory with a terminal that has admin privileges
 5. Run the following command:
 ```bash
 ./run.sh
 ```
+NOTE: If you're unable to execute run.sh due to permissions, you can try `chmod 777 run.sh` to make it executable with admin privileges. Might need to use sudo.
 
 ## How to remove the program
 1. Delete the folder containing the program files
